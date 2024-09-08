@@ -17,7 +17,7 @@ function buildMetadata(sample) {
 
     // Inside a loop, you will need to use d3 to append new
     // tags for each key-value in the filtered metadata.
-    for (let key in result){
+    for (let key in result)
       PANEL.append("h6").text(`${key.toUpperCase()}: ${result[key]}`);
   });
 }
@@ -115,7 +115,7 @@ function init() {
     let dropdown = d3.select("#selDataset");
 
     // Use the list of sample names to populate the select options
-    // Hint: Inside a loop, you will need to use d3 to append a new
+    // Inside a loop, you will need to use d3 to append a new
     // option for each sample name.
     samNames.forEach((sample) => {
       dropdown.append("option")
